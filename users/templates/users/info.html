@@ -1,0 +1,14 @@
+{% extends 'users/main.html' %}
+
+{% load static %}
+
+{% block title %}
+    О компании
+{% endblock %}
+
+{% block content %}
+    <h1>Про компанию</h1>
+    <p>Здесь немножко информации про нас!</p>
+    <img class="about" src="{% static "users/img/mountain.jpg" %}" alt="Logo">
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'users/main.html' %}
+
+{% block title %}
+    Авторизация пользователя
+{% endblock %}
+
+{% block content %}
+    <div class="form-main">
+        <div class="block_1">
+            <h1>Сокра.тим</h1>
+            <h3>Вам нужно сократить ссылку?<br>Сейчас мы это сделаем</h3>
+            <form method="post" enctype="multipart/form-data" class="form-body">
+                {% csrf_token %}
+                {{ form }}
+                <button class="btn" type="submit">Сократить</button>
+            </form>
+        </div>
+        <div class="block_2">
+            <h3>Мои ссылки:</h3>
+            {% for el in data %}
+                <div class="block">
+                    <h4>{{ el.name }}</h4>
+                    <p>Ссылка - <a href="{{ el.slug }}" target="_blank">{{ el.slug }}</a></p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-weight: 400;
+    background: #fff;
+}
+
+header {
+    background: #1B3333;
+}
+
+.container {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.top_menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top_menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 18px;
+    color: #FFCC00;
+    overflow: hidden;
+    align-items: center;
+}
+
+.top_menu img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.top_menu img:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_menu .first_menu a:not(:last-of-type)::after {
+    content: "|";
+    margin-left: 10px;
+    font-weight: 600;
+    color: #f89b95;
+}
+
+.main_menu .first_menu a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+}
+
+.main_menu .second_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+.main_menu .second_menu a:last-of-type {
+    margin-left: 5px;
+}
+
+.main_menu .second_menu a button {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn.auth {
+    min-width: 100px;
+    background: #ff5644;
+}
+
+.btn {
+    padding: 0px 15px;
+    height: 40px;
+    background: rgb(25, 128, 34);
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+
+.main_menu .first_menu a:hover {
+    color: #FFCC00;
+    transition: color 0.6s ease;
+}
+
+.main_menu .second_menu a button:hover {
+    border-radius: 20px;
+    transition: border-radius 0.6s ease;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1B3333;
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+footer .social i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: silver;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: transform 600ms ease;
+    color: #333;
+    font-size: 18px;
+}
+
+footer .social i:hover {
+    transition: transform 600ms ease;
+    transform: translateY(-5px);
+    background: #ff5644;
+}
+
+.main_page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+.main_page h1, h3 {
+    margin-bottom: 20px;
+}
+
+.main_page h1 {
+    font-size: 48px;
+}
+
+.main_page a button:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+
+/*Формочки*/
+
+.form-control {
+    width: 500px;
+}
+
+.form-control input,
+.form-control textarea {
+    width: 100%;
+    background: #fcfcfc;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-control textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form-control .btn {
+    margin-top: 15px;
+    margin-left: 0;
+    background: #ff5644;
+}
+
+.form-control .error {
+    color: #ff5644;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-control button:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+.form h1 {margin-top: 20px;}
+.form p {margin-bottom: 10px;}
+
+.form-control button {margin-bottom: 10px;}
+
+.profile_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile_data .username {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.profile_data .email {
+    padding-bottom: 10px;
+}
+
+.profile {
+    margin: 10px 0;
+    background: #fafafa;
+    border: 1px solid silver;
+    padding: 20px 3%;
+    width: 94%;
+}
+
+.about {
+    height: 500px;
+    width: 100%;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: row;
+}
+
+.block_1 {
+    width: 45%;
+}
+
+.block_2 {
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.block {
+    height: 60px;
+    width: 180px;
+    border: 1px solid silver;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background: #fafafa;
+}
+
+.block h4 {
+    margin-bottom: 5px;
+}
+
+.errorlist li {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.form-body {
+    width: 400px;
+}
+
+.form-body input,
+.form-body textarea {
+    width: 100%;
+    background: #fcfcfc;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-body textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form-body .btn {
+    margin-top: 15px;
+    margin-left: 0;
+    background: #ff5644;
+}
+
+.form-body .error {
+    color: #ff5644;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.form-body button:hover {
+    transition: all 600ms ease;
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0px 10px 20px -2px rgba(0,0,0,0.3);
+}
+.form h1 {margin-top: 20px;}
+.form p {margin-bottom: 10px;}
+
+.form-body button {margin-bottom: 10px;}

@@ -1,0 +1,18 @@
+{% extends 'users/main.html' %}
+
+{% block title %}
+    Регистрация
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+        <h1>Регистрация пользователя</h1>
+        <p>Здесь вы можете зарегистрироваться</p>
+        <form method="post" class="form-control">
+            {% csrf_token %}
+            {{ form }}
+            <button class="btn auth" type="submit">Зарегистрироваться</button>
+            <p>Уже зарегистрированы? <a href="#">Войти в личный кабинет</a> </p>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'users/main.html' %}
+
+{% block title %}
+    Свяжитесь с нами
+{% endblock %}
+
+{% block content %}
+    <div class="form">
+        <h1>Контакты</h1>
+        <p>Напишите нам, если у вас есть вопросы</p>
+        <form method="post" class="form-control auth">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn auth" type="submit">Отправить</button>
+        </form>
+    </div>
+{% endblock %}
